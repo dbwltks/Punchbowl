@@ -1,14 +1,18 @@
+import Image from 'next/image';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 bg-stone-900 overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2940&auto=format&fit=crop')" }}
-      >
-        <div className="absolute inset-0 bg-stone-900/40 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent"></div>
-      </div>
-      
+      <Image
+        src="/hero_2.jpg"
+        alt="펀치볼 생태환경농업 주민공동체"
+        fill
+        priority
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-stone-900/40 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent"></div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2] mb-6 tracking-tight drop-shadow-sm">

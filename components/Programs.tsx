@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Programs() {
   const programs = [
     {
@@ -37,10 +39,12 @@ export default function Programs() {
           {programs.map((prog, i) => (
             <div key={i} className="group cursor-pointer">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-stone-100 mb-6 relative shadow-sm">
-                <img 
-                  src={prog.img} 
-                  alt={prog.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                <Image
+                  src={prog.img}
+                  alt={prog.title}
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute top-4 left-4 bg-white/95 text-emerald-800 px-4 py-1.5 text-xs font-bold rounded-full backdrop-blur-md shadow-sm">
                   {prog.category}
