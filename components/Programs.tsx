@@ -6,19 +6,19 @@ export default function Programs() {
       category: "비점오염 저감",
       title: "친환경·생태영농 추진",
       desc: "완충녹지대, 침사지 조성 및 밭 기반 정비를 통해 토사 유출을 방지하고 유기농·생태영농 기술을 보급합니다.",
-      img: "https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?q=80&w=800&auto=format&fit=crop"
+      img: "/hero_1.jpg"
     },
     {
       category: "환경 모니터링",
       title: "주민참여 환경감시단",
       desc: "주민 주도의 비점오염원 및 하천 수질 모니터링을 진행하고 맞춤형 생태·환경 교육 프로그램을 운영합니다.",
-      img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop"
+      img: "/hero_3.jpg"
     },
     {
       category: "지역 자원 연계",
       title: "생태 자원 및 문화 계승",
       desc: "펀치볼 지역의 생물권 자연생태와 문화 자원을 보전하며, 지속가능한 생태관광 및 마을 조성을 지원합니다.",
-      img: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop"
+      img: "/hero_4.jpg"
     }
   ];
 

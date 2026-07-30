@@ -1,26 +1,37 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 bg-stone-900 overflow-hidden">
-      <Image
-        src="/hero_2.jpg"
-        alt="펀치볼 생태환경농업 주민공동체"
-        fill
-        priority
-        className="object-cover"
-      />
+      <motion.div
+        className="absolute inset-0"
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.12 }}
+        transition={{ duration: 20, ease: 'easeOut' }}
+      >
+        <Image
+          src="/hero_2.jpg"
+          alt="펀치볼 생태환경농업 주민공동체"
+          fill
+          priority
+          quality={90}
+          className="object-cover"
+        />
+      </motion.div>
       <div className="absolute inset-0 bg-stone-900/40 mix-blend-overlay"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-20">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2] mb-6 tracking-tight drop-shadow-sm">
             지속가능한 생태영농,<br />
             아름다운 펀치볼을 위하여
           </h1>
           <p className="text-lg md:text-xl text-stone-200 mb-10 max-w-2xl leading-relaxed font-light drop-shadow">
-            강원특별자치도 양구군 해안면의 생물권보전지역을 지킵니다. 
+            강원특별자치도 양구군 해안면의 생물권보전지역을 지킵니다.
             주민의 자발적 참여와 연대를 바탕으로 친환경 농업을 실천하고 생태계를 복원하는 '펀치볼 생태환경농업 주민공동체'입니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
