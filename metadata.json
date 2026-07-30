@@ -1,0 +1,6 @@
+{
+  "name": "펀치볼 사람들 (Punchbowl Neighbors)",
+  "description": "강원도 양구군 해안면 펀치볼 생태환경농업 주민공동체 공식 웹사이트입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
